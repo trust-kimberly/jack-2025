@@ -10,7 +10,7 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen relative">
       <header className="fixed top-0 left-0 right-0 flex justify-between px-2 sm:px-3 py-2 bg-transparent z-50">
         <div className="text-xs md:text-sm cursor-pointer hover-glow" onClick={scrollToTop}>
           Jack Hallenbeck
@@ -22,7 +22,7 @@ function App() {
         </div>
       </header>
 
-      <main className="flex-1 my-16 md:my-20">
+      <main className="pt-16 pb-16 md:pt-20 md:pb-20">
         <ImageGallery />
       </main>
 
