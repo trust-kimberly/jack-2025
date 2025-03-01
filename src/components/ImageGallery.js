@@ -9,7 +9,7 @@ const ImageGallery = () => {
 
   const images = [
     {
-      url: '/maggie.jpg',
+      url: `${process.env.PUBLIC_URL}/maggie.jpg`,
       role: 'Producer, Songwriter, Engineer',
       album: 'Heard It In A Past Life',
       artist: 'Maggie Rogers',
@@ -17,7 +17,7 @@ const ImageGallery = () => {
       link: 'https://open.spotify.com/album/5AHWNPo3gllDmixgAoFru4?si=RHouPPdURjuvJ_c3NO6VWQ',
     },
     {
-      url: '/dgtym.jpeg',
+      url: `${process.env.PUBLIC_URL}/dgtym.jpeg`,
       role: 'Producer, Songwriter, Engineer',
       album: 'DGTYM',
       artist: 'Topaz Jones',
@@ -25,7 +25,7 @@ const ImageGallery = () => {
       link: 'https://open.spotify.com/album/5AHWNPo3gllDmixgAoFru4?si=RHouPPdURjuvJ_c3NO6VWQ',
     },
     {
-      url: '/tired.jpeg',
+      url: `${process.env.PUBLIC_URL}/tired.jpeg`,
       role: 'Producer, Songwriter, Engineer',
       album: 'Tired of Love',
       artist: 'Scott James',
@@ -33,7 +33,7 @@ const ImageGallery = () => {
       link: 'https://open.spotify.com/album/5AHWNPo3gllDmixgAoFru4?si=RHouPPdURjuvJ_c3NO6VWQ',
     },
     {
-      url: '/girlpool.jpg',
+      url: `${process.env.PUBLIC_URL}/girlpool.jpg`,
       role: 'Producer, Songwriter, Engineer',
       album: 'Girlpool',
       artist: 'Girlpool',
@@ -41,7 +41,7 @@ const ImageGallery = () => {
       link: 'https://open.spotify.com/album/5AHWNPo3gllDmixgAoFru4?si=RHouPPdURjuvJ_c3NO6VWQ',
     },
     {
-      url: '/fubt.jpg',
+      url: `${process.env.PUBLIC_URL}/fubt.jpg`,
       role: 'Producer, Songwriter, Engineer',
       album: 'FUBT',
       artist: 'FUBT',
@@ -49,7 +49,7 @@ const ImageGallery = () => {
       link: 'https://open.spotify.com/album/5AHWNPo3gllDmixgAoFru4?si=RHouPPdURjuvJ_c3NO6VWQ',
     },
     {
-      url: '/fun.jpg',
+      url: `${process.env.PUBLIC_URL}/fun.jpg`,
       role: 'Producer, Songwriter, Engineer',
       album: 'Fun',
       artist: 'Fun',
@@ -57,7 +57,7 @@ const ImageGallery = () => {
       link: 'https://open.spotify.com/album/5AHWNPo3gllDmixgAoFru4?si=RHouPPdURjuvJ_c3NO6VWQ',
     },
     {
-      url: '/kate.jpg',
+      url: `${process.env.PUBLIC_URL}/kate.jpg`,
       role: 'Producer, Songwriter, Engineer',
       album: 'Kate',
       artist: 'Kate Bush',
@@ -65,7 +65,7 @@ const ImageGallery = () => {
       link: 'https://open.spotify.com/album/5AHWNPo3gllDmixgAoFru4?si=RHouPPdURjuvJ_c3NO6VWQ',
     },
     {
-      url: '/un.jpg',
+      url: `${process.env.PUBLIC_URL}/un.jpg`,
       role: 'Producer, Songwriter, Engineer',
       album: 'Un',
       artist: 'Un',
@@ -73,7 +73,7 @@ const ImageGallery = () => {
       link: 'https://open.spotify.com/album/5AHWNPo3gllDmixgAoFru4?si=RHouPPdURjuvJ_c3NO6VWQ',
     },
     {
-      url: '/nectar.jpg',
+      url: `${process.env.PUBLIC_URL}/nectar.jpg`,
       role: 'Producer, Songwriter, Engineer',
       album: 'Nectar',
       artist: 'Nectar',
@@ -81,7 +81,7 @@ const ImageGallery = () => {
       link: 'https://open.spotify.com/album/5AHWNPo3gllDmixgAoFru4?si=RHouPPdURjuvJ_c3NO6VWQ',
     },
     {
-      url: '/zoom.jpg',
+      url: `${process.env.PUBLIC_URL}/zoom.jpg`,
       role: 'Producer, Songwriter, Engineer',
       album: 'Zoom',
       artist: 'Zoom',
@@ -89,7 +89,7 @@ const ImageGallery = () => {
       link: 'https://open.spotify.com/album/5AHWNPo3gllDmixgAoFru4?si=RHouPPdURjuvJ_c3NO6VWQ',
     },
     {
-      url: '/rogers.jpg',
+      url: `${process.env.PUBLIC_URL}/rogers.jpg`,
       role: 'Producer, Songwriter, Engineer',
       album: 'Rogers',
       artist: 'Rogers',
@@ -97,7 +97,7 @@ const ImageGallery = () => {
       link: 'https://open.spotify.com/album/5AHWNPo3gllDmixgAoFru4?si=RHouPPdURjuvJ_c3NO6VWQ',
     },
     {
-      url: '/shelter.jpg',
+      url: `${process.env.PUBLIC_URL}/shelter.jpg`,
       role: 'Producer, Songwriter, Engineer',
       album: 'Shelter',
       artist: 'Shelter',
@@ -105,7 +105,7 @@ const ImageGallery = () => {
       link: 'https://open.spotify.com/album/5AHWNPo3gllDmixgAoFru4?si=RHouPPdURjuvJ_c3NO6VWQ',
     },
     {
-      url: '/one.jpg',
+      url: `${process.env.PUBLIC_URL}/one.jpg`,
       role: 'Producer, Songwriter, Engineer',
       album: 'One',
       artist: 'One',
@@ -113,7 +113,7 @@ const ImageGallery = () => {
       link: 'https://open.spotify.com/album/5AHWNPo3gllDmixgAoFru4?si=RHouPPdURjuvJ_c3NO6VWQ',
     },
     {
-      url: '/voice.jpg',
+      url: `${process.env.PUBLIC_URL}/voice.jpg`,
       role: 'Producer, Songwriter, Engineer',
       album: 'Voice',
       artist: 'Voice',
