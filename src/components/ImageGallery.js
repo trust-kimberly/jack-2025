@@ -325,7 +325,9 @@ const ImageGallery = () => {
                   className="absolute inset-0 flex flex-col justify-end p-3 bg-black bg-opacity-40 transition-all duration-400 ease-in-out"
                   style={{ color: 'white' }}
                 >
-                  <p className="text-md font-semibold">{image.album}</p>
+                  <p className="text-md font-semibold">
+                    <em>{image.album}</em>
+                  </p>
                   <p className="text-sm font-semibold">{image.artist}</p>
                   <p className="text-sm font-medium">{image.year}</p>
                 </div>
