@@ -133,8 +133,7 @@ const ImageGallery = () => {
       artist: 'HAIM',
       year: '2021',
       role: 'Synthesizer',
-      tracks: [],
-      description: 'FUBT',
+      tracks: ['FUBT'],
     },
     {
       url: `${process.env.PUBLIC_URL}/JULIET_TINYBUTSCARY.png`,
@@ -150,8 +149,7 @@ const ImageGallery = () => {
       artist: 'Various Artists',
       year: '2023',
       role: 'Synthesizer',
-      tracks: [],
-      description: 'Home by HAIM',
+      tracks: ['Home by HAIM'],
     },
     {
       url: `${process.env.PUBLIC_URL}/MAGGIE_NOWLIGHT.jpg`,

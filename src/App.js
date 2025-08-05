@@ -32,10 +32,10 @@ function Header() {
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 flex justify-between px-2 sm:px-3 py-2 backdrop-blur-md md:backdrop-blur-none bg-transparent z-50">
+    <header className="fixed top-0 left-0 right-0 flex justify-between px-2 sm:px-3 py-2 backdrop-blur-md bg-white bg-opacity-80 md:backdrop-blur-none md:bg-transparent z-50">
       <button
         onClick={handleNameClick}
-        className="text-xl md:text-md cursor-pointer hover-glow text-left"
+        className="text-xl md:text-md font-medium cursor-pointer hover-glow text-left"
       >
         Jack Hallenbeck
       </button>
@@ -61,7 +61,7 @@ function App() {
           </Routes>
         </main>
 
-        <footer className="fixed bottom-0 left-0 right-0 flex justify-between px-2 sm:px-3 py-2 backdrop-blur-md md:backdrop-blur-none bg-transparent z-50">
+        <footer className="fixed bottom-0 left-0 right-0 flex justify-between px-2 sm:px-3 py-2 backdrop-blur-md bg-white bg-opacity-80 md:backdrop-blur-none md:bg-transparent z-50">
           <div className="text-sm">Based in Los Angeles</div>
           <div className="mr-1 sm:mr-0">
             <a
