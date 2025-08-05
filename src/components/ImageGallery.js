@@ -14,7 +14,7 @@ const ImageGallery = () => {
 
   const images = [
     {
-      url: `${process.env.PUBLIC_URL}/maggie.jpg`,
+      url: `${process.env.PUBLIC_URL}/D4VD_WITHERED.png`,
       album: 'WITHERED',
       artist: 'd4vd',
       year: '2025',
@@ -31,7 +31,7 @@ const ImageGallery = () => {
       ],
     },
     {
-      url: `${process.env.PUBLIC_URL}/dgtym.jpeg`,
+      url: `${process.env.PUBLIC_URL}/HAIM_IQUIT.png`,
       album: 'i quit',
       artist: 'HAIM',
       year: '2025',
@@ -39,7 +39,7 @@ const ImageGallery = () => {
       tracks: ['Million Years'],
     },
     {
-      url: `${process.env.PUBLIC_URL}/tired.jpeg`,
+      url: `${process.env.PUBLIC_URL}/MAGGIE_HIIAPL.png`,
       album: 'Heard it in a Past Life',
       artist: 'Maggie Rogers',
       year: '2019',
@@ -47,7 +47,7 @@ const ImageGallery = () => {
       tracks: ['Say It'],
     },
     {
-      url: `${process.env.PUBLIC_URL}/girlpool.jpg`,
+      url: `${process.env.PUBLIC_URL}/TOPAZ_DGTYM.jpg`,
       album: "Don't Go Tellin' Your Momma",
       artist: 'Topaz Jones',
       year: '2021',
@@ -64,25 +64,23 @@ const ImageGallery = () => {
       ],
     },
     {
-      url: `${process.env.PUBLIC_URL}/fubt.jpg`,
+      url: `${process.env.PUBLIC_URL}/ARCANE.jpeg`,
       album: 'Arcane League of Legends: Season 2',
       artist: 'Various Artists',
       year: '2024',
       role: 'Producer, Songwriter',
-      tracks: [],
-      description: 'Remember Me by d4vd',
+      tracks: ['Remember Me by d4vd'],
     },
     {
-      url: `${process.env.PUBLIC_URL}/fun.jpg`,
+      url: `${process.env.PUBLIC_URL}/DANNY_DISINTEGRATION.jpg`,
       album: 'Disintegration',
       artist: 'Daniel Noah Miller',
       year: '2024',
       role: 'Producer, Songwriter, Engineer',
-      tracks: [],
-      description: 'Entire LP',
+      tracks: ['Entire LP'],
     },
     {
-      url: `${process.env.PUBLIC_URL}/kate.jpg`,
+      url: `${process.env.PUBLIC_URL}/SCOTT_SHELTERISLAND.jpg`,
       album: 'Shelter Island Heights',
       artist: 'Scott James',
       year: '2017',
@@ -90,7 +88,7 @@ const ImageGallery = () => {
       tracks: ['Belvedere', 'Park Music'],
     },
     {
-      url: `${process.env.PUBLIC_URL}/un.jpg`,
+      url: `${process.env.PUBLIC_URL}/TIFFANY_LTF.png`,
       album: 'LOVER TOFU FRUIT',
       artist: 'Tiffany Day',
       year: '2024',
@@ -98,16 +96,15 @@ const ImageGallery = () => {
       tracks: ['FAR AWAY', 'KANSAS', 'LOVER TOFU FRUIT'],
     },
     {
-      url: `${process.env.PUBLIC_URL}/nectar.jpg`,
+      url: `${process.env.PUBLIC_URL}/D4VD_WITHERING.png`,
       album: 'Withering',
       artist: 'd4vd',
       year: '2024',
       role: 'Producer, Songwriter, Engineer',
-      tracks: [],
-      description: 'Entire EP',
+      tracks: ['Entire EP'],
     },
     {
-      url: `${process.env.PUBLIC_URL}/zoom.jpg`,
+      url: `${process.env.PUBLIC_URL}/RAHUL_DBMIC.jpg`,
       album: 'DEPRESSED BUT MAKE IT COOL',
       artist: 'Rahul',
       year: '2022',
@@ -115,7 +112,7 @@ const ImageGallery = () => {
       tracks: ['ANECDOTE', 'LONDON FOG', 'DIRTY CHAI'],
     },
     {
-      url: `${process.env.PUBLIC_URL}/rogers.jpg`,
+      url: `${process.env.PUBLIC_URL}/JULIET_PLAYPEN.png`,
       album: 'playpen',
       artist: 'Juliet Ivy',
       year: '2023',
@@ -123,7 +120,7 @@ const ImageGallery = () => {
       tracks: ['wet nose'],
     },
     {
-      url: `${process.env.PUBLIC_URL}/shelter.jpg`,
+      url: `${process.env.PUBLIC_URL}/D4VD_HOUSE.png`,
       album: 'My House is not a Home',
       artist: 'd4vd',
       year: '2024',
@@ -131,7 +128,7 @@ const ImageGallery = () => {
       tracks: ['My House is not a Home'],
     },
     {
-      url: `${process.env.PUBLIC_URL}/one.jpg`,
+      url: `${process.env.PUBLIC_URL}/HAIM_WIMPIII.png`,
       album: 'Women in Music Pt. III',
       artist: 'HAIM',
       year: '2021',
@@ -140,15 +137,7 @@ const ImageGallery = () => {
       description: 'FUBT',
     },
     {
-      url: `${process.env.PUBLIC_URL}/voice.jpg`,
-      album: 'Fun',
-      artist: 'Scott James',
-      year: '2020',
-      role: 'Producer, Songwriter, Engineer',
-      tracks: ['Bridge Vision', 'Staring Contest'],
-    },
-    {
-      url: `${process.env.PUBLIC_URL}/maggie.jpg`,
+      url: `${process.env.PUBLIC_URL}/JULIET_TINYBUTSCARY.png`,
       album: 'tiny but scary',
       artist: 'Juliet Ivy',
       year: '2024',
@@ -156,31 +145,7 @@ const ImageGallery = () => {
       tracks: ['kid'],
     },
     {
-      url: `${process.env.PUBLIC_URL}/dgtym.jpeg`,
-      album: 'Now that the Light is Fading',
-      artist: 'Maggie Rogers',
-      year: '2017',
-      role: 'Engineer',
-      tracks: ['Color Song'],
-    },
-    {
-      url: `${process.env.PUBLIC_URL}/tired.jpeg`,
-      album: 'Un',
-      artist: 'Scott James',
-      year: '2019',
-      role: 'Producer, Songwriter, Engineer, Mixer',
-      tracks: ['Ballet', 'W'],
-    },
-    {
-      url: `${process.env.PUBLIC_URL}/girlpool.jpg`,
-      album: 'Spirituals',
-      artist: 'Santigold',
-      year: '2022',
-      role: 'Producer, Songwriter',
-      tracks: ['Ushers of the New World'],
-    },
-    {
-      url: `${process.env.PUBLIC_URL}/fubt.jpg`,
+      url: `${process.env.PUBLIC_URL}/BARBIE.jpg`,
       album: 'Barbie The Album',
       artist: 'Various Artists',
       year: '2023',
@@ -189,12 +154,44 @@ const ImageGallery = () => {
       description: 'Home by HAIM',
     },
     {
-      url: `${process.env.PUBLIC_URL}/fun.jpg`,
+      url: `${process.env.PUBLIC_URL}/MAGGIE_NOWLIGHT.jpg`,
+      album: 'Now that the Light is Fading',
+      artist: 'Maggie Rogers',
+      year: '2017',
+      role: 'Engineer',
+      tracks: ['Color Song'],
+    },
+    {
+      url: `${process.env.PUBLIC_URL}/SCOTT_UN.jpg`,
+      album: 'Un',
+      artist: 'Scott James',
+      year: '2019',
+      role: 'Producer, Songwriter, Engineer, Mixer',
+      tracks: ['Ballet', 'W'],
+    },
+    {
+      url: `${process.env.PUBLIC_URL}/ROSTAM_CHANGEPHOBIA.jpg`,
       album: 'Changephobia',
       artist: 'Rostam',
       year: '2021',
       role: 'Synthesizer, Engineer',
       tracks: ['These Kids We Knew'],
+    },
+    {
+      url: `${process.env.PUBLIC_URL}/SCOTT_FUN.jpg`,
+      album: 'Fun',
+      artist: 'Scott James',
+      year: '2020',
+      role: 'Producer, Songwriter, Engineer',
+      tracks: ['Bridge Vision', 'Staring Contest'],
+    },
+    {
+      url: `${process.env.PUBLIC_URL}/SANTIGOLD.jpg`,
+      album: 'Spirituals',
+      artist: 'Santigold',
+      year: '2022',
+      role: 'Producer, Songwriter',
+      tracks: ['Ushers of the New World'],
     },
   ];
 
@@ -229,7 +226,6 @@ const ImageGallery = () => {
         const color = colorThief.getColor(img);
         const [r, g, b] = color;
         const rgbColor = `rgb(${color.join(',')})`;
-        console.log(`Image ${index} dominant color:`, rgbColor);
         setDominantColors((prev) => ({
           ...prev,
           [index]: rgbColor,
@@ -246,7 +242,7 @@ const ImageGallery = () => {
   const handleMouseEnter = (index) => {
     if (!isMobile) {
       document.body.style.backgroundColor = dominantColors[index] || 'white';
-      document.body.style.transition = 'background-color 0.8s cubic-bezier(0.165, 0.84, 0.44, 1)';
+      document.body.style.transition = 'background-color 1s cubic-bezier(0.165, 0.84, 0.44, 1)';
       setHoveredIndex(index);
     }
   };
@@ -331,10 +327,9 @@ const ImageGallery = () => {
                   className="absolute inset-0 flex flex-col justify-end p-3 bg-black bg-opacity-40 transition-all duration-400 ease-in-out"
                   style={{ color: 'white' }}
                 >
-                  <p className="text-xs md:text-sm lg:text-base font-bold">{image.role}</p>
-                  <p className="text-xs md:text-sm lg:text-base font-semibold">
-                    {image.artist}, <em>{image.album}</em>, {image.year}
-                  </p>
+                  <p className="text-md font-semibold">{image.album}</p>
+                  <p className="text-sm font-semibold">{image.artist}</p>
+                  <p className="text-sm font-medium">{image.year}</p>
                 </div>
               )}
             </div>
@@ -352,12 +347,6 @@ const ImageGallery = () => {
         hasPrevious={selectedProjectIndex > 0}
         hasNext={selectedProjectIndex < images.length - 1}
       />
-      {/* Debug: log the selected project and its dominant color */}
-      {selectedProjectIndex !== null && (
-        <div style={{ display: 'none' }}>
-          Debug: Project {selectedProjectIndex}, Color: {dominantColors[selectedProjectIndex]}
-        </div>
-      )}
     </>
   );
 };
