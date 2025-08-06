@@ -105,7 +105,7 @@ const ProjectModal = ({
             <div className="mt-10 pt-4 pb-16 md:pb-0 border-t border-gray-200 md:bottom-0">
               <div className="flex justify-between items-center">
                 <button onClick={onClose} className="text-sm hover-glow">
-                  ← Back to Discography
+                  ← Back to Selected Works
                 </button>
 
                 <div className="flex items-center space-x-4">

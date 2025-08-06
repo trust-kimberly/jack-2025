@@ -58,7 +58,7 @@ const Info = () => {
           {/* Back to Gallery */}
           <div className="mt-12 mb-6">
             <Link to="/" className="inline-block text-sm hover-glow">
-              ← Back to Discography
+              ← Back to Selected Works
             </Link>
           </div>
         </div>
