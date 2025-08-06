@@ -6,6 +6,9 @@ module.exports = {
       scale: {
         108: '1.08',
       },
+      fontFamily: {
+        garamond: ['Adobe Garamond Pro', 'Garamond', 'Times New Roman', 'serif'],
+      },
     },
   },
   plugins: [],

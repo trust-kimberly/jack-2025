@@ -45,7 +45,7 @@ body,
 }
 
 body {
-  font-family: 'Courier New', Courier, monospace, sans-serif;
+  font-family: 'Adobe Garamond Pro', 'Garamond', 'Times New Roman', serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   transition: background-color 1.5s cubic-bezier(0.165, 0.84, 0.44, 1);

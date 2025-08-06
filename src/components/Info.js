@@ -22,23 +22,16 @@ const Info = () => {
         <div className="order-1 md:order-2">
           <div className="space-y-4 text-sm md:text-base leading-relaxed">
             <p>
-              Jack Hallenbeck is a producer, songwriter, and engineer based in Los Angeles. With a
-              passion for creating authentic, emotionally resonant music, Jack has collaborated with
-              artists across various genres to bring their creative visions to life.
+              Jack Hallenbeck is a producer, engineer and songwriter based in Los Angeles,
+              California.
             </p>
 
             <p>
-              His work spans from intimate acoustic recordings to full-scale productions, always
-              maintaining a focus on capturing the essence of each artist's unique voice. Jack's
-              approach combines technical expertise with artistic sensitivity, creating spaces where
-              creativity can flourish.
+              He is signed to Mastor Projects, a joint-venture between Sony Music Publishing and
+              Rostam Batmanglij.
             </p>
 
-            <p>
-              When not in the studio, Jack can be found exploring new sounds, collaborating with
-              emerging artists, and continuously evolving his craft in the ever-changing landscape
-              of music production.
-            </p>
+            <p>He loves Magic: the Gathering, Italian subs, and his friends.</p>
           </div>
 
           {/* Contact Info */}
@@ -50,7 +43,7 @@ const Info = () => {
                 className="text-md hover-glow flex items-center gap-2 w-fit"
               >
                 <Mail size={20} strokeWidth={1} />
-                jackhallenbeck@gmail.com
+                lilliana@foretellmgmt.xyz
               </a>
               <a
                 href="https://www.instagram.com/jackhallenbeck"
