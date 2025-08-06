@@ -51,7 +51,7 @@ function App() {
       <div className="min-h-screen relative">
         <Header />
 
-        <main className="py-12 md:pt-20 md:pb-20">
+        <main className="pt-12 md:pt-20 md:pb-20">
           <Routes>
             <Route path="/" element={<ImageGallery />} />
             <Route path="/info" element={<Info />} />
