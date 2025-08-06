@@ -58,7 +58,7 @@ const ProjectModal = ({
       }`}
       style={{
         backgroundColor: dominantColor
-          ? dominantColor.replace('rgb(', 'rgba(').replace(')', ', 0.8)') // Convert rgb to rgba with 0.9 opacity
+          ? dominantColor.replace('rgb(', 'rgba(').replace(')', ', 0.9)') // Convert rgb to rgba with 0.9 opacity
           : 'rgba(0, 0, 0, 0.9)', // Fallback to black with transparency
       }}
     >

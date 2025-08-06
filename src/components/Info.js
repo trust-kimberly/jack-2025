@@ -56,10 +56,18 @@ const Info = () => {
           </div>
 
           {/* Back to Gallery */}
-          <div className="mt-12 mb-6">
+          <div className="mt-12 mb-6 flex justify-between">
             <Link to="/" className="inline-block text-sm hover-glow">
               ← Back to Selected Works
             </Link>
+            <a
+              href="https://open.spotify.com/playlist/1tmjGYDGkrL57Itgg8IBRI?si=d8613ce2c2c14918&nd=1&dlsi=7e83256f42e04118"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm hover-glow"
+            >
+              Listen to Selected Works →
+            </a>
           </div>
         </div>
       </div>
