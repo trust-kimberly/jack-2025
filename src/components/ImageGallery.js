@@ -221,17 +221,35 @@ const ImageGallery = () => {
       img.src = image.url;
 
       img.onload = () => {
-        const color = colorThief.getColor(img);
-        const [r, g, b] = color;
-        const rgbColor = `rgb(${color.join(',')})`;
-        setDominantColors((prev) => ({
-          ...prev,
-          [index]: rgbColor,
-        }));
-        setTextColors((prev) => ({
-          ...prev,
-          [index]: getContrastColor(r, g, b),
-        }));
+        try {
+          const color = colorThief.getColor(img);
+          const [r, g, b] = color;
+          const rgbColor = `rgb(${color.join(',')})`;
+          setDominantColors((prev) => ({
+            ...prev,
+            [index]: rgbColor,
+          }));
+          setTextColors((prev) => ({
+            ...prev,
+            [index]: getContrastColor(r, g, b),
+          }));
+        } catch (error) {
+          console.warn(`Failed to extract color for image ${index}:`, error);
+          // Set a fallback color if color extraction fails
+          setDominantColors((prev) => ({
+            ...prev,
+            [index]: 'rgb(128, 128, 128)',
+          }));
+          setTextColors((prev) => ({
+            ...prev,
+            [index]: '#ffffff',
+          }));
+        }
+        setLoadedImages((prev) => prev + 1);
+      };
+
+      img.onerror = () => {
+        console.error(`Failed to load image ${index}:`, image.url);
         setLoadedImages((prev) => prev + 1);
       };
     });
@@ -319,6 +337,7 @@ const ImageGallery = () => {
                 src={image.url}
                 alt={image.album}
                 className="w-full aspect-square object-cover shadow-md"
+                loading="lazy"
               />
               {isTextVisible(index) && (
                 <div
