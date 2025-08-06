@@ -2,6 +2,89 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Minion Pro Font Face Declarations */
+@font-face {
+  font-family: 'Minion Pro';
+  src: url('../public/fonts/minion-pro/MinionPro-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Minion Pro';
+  src: url('../public/fonts/minion-pro/MinionPro-It.otf') format('opentype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Minion Pro';
+  src: url('../public/fonts/minion-pro/MinionPro-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Minion Pro';
+  src: url('../public/fonts/minion-pro/MinionPro-MediumIt.otf') format('opentype');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Minion Pro';
+  src: url('../public/fonts/minion-pro/MinionPro-Semibold.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Minion Pro';
+  src: url('../public/fonts/minion-pro/MinionPro-SemiboldIt.otf') format('opentype');
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Minion Pro';
+  src: url('../public/fonts/minion-pro/MinionPro-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Minion Pro';
+  src: url('../public/fonts/minion-pro/MinionPro-BoldIt.otf') format('opentype');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Minion Pro';
+  src: url('../public/fonts/minion-pro/MinionPro-BoldCn.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: condensed;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Minion Pro';
+  src: url('../public/fonts/minion-pro/MinionPro-BoldCnIt.otf') format('opentype');
+  font-weight: 700;
+  font-style: italic;
+  font-stretch: condensed;
+  font-display: swap;
+}
+
 @layer components {
   .hover-glow {
     @apply relative transition-all duration-[400ms] ease-[cubic-bezier(0.165,0.84,0.44,1)] inline-block;
@@ -45,7 +128,7 @@ body,
 }
 
 body {
-  font-family: 'Adobe Garamond Pro', 'Garamond', 'Times New Roman', serif;
+  font-family: 'Minion Pro', 'Minion', 'Times New Roman', serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   transition: background-color 1.5s cubic-bezier(0.165, 0.84, 0.44, 1);

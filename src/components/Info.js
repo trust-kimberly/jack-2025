@@ -30,8 +30,6 @@ const Info = () => {
               He is signed to Mastor Projects, a joint-venture between Sony Music Publishing and
               Rostam Batmanglij.
             </p>
-
-            <p>He loves Magic: the Gathering, Italian subs, and his friends.</p>
           </div>
 
           {/* Contact Info */}

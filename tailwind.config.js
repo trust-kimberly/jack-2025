@@ -7,7 +7,12 @@ module.exports = {
         108: '1.08',
       },
       fontFamily: {
-        garamond: ['Adobe Garamond Pro', 'Garamond', 'Times New Roman', 'serif'],
+        minion: ['Minion Pro', 'serif'],
+      },
+      fontWeight: {
+        medium: '500',
+        semibold: '600',
+        bold: '700',
       },
     },
   },
