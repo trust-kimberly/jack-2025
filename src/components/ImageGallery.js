@@ -257,8 +257,6 @@ const ImageGallery = () => {
 
   const handleMouseEnter = (index) => {
     if (!isMobile) {
-      document.body.style.backgroundColor = dominantColors[index] || 'white';
-      document.body.style.transition = 'background-color 1s cubic-bezier(0.165, 0.84, 0.44, 1)';
       setHoveredIndex(index);
     }
   };
@@ -329,28 +327,25 @@ const ImageGallery = () => {
             onMouseLeave={handleMouseLeave}
             onClick={() => handleClick(index)}
           >
-            <div
-              className={`hover-glow inline-block w-full transition-opacity duration-400 ease-in-out relative
-              ${isImageDimmed(index) ? 'opacity-20' : 'opacity-100'}`}
-            >
+            <div className={`hover-glow inline-block w-full duration-400 ease-in-out relative`}>
               <img
                 src={image.url}
                 alt={image.album}
                 className="w-full aspect-square object-cover shadow-md"
                 loading="lazy"
               />
-              {isTextVisible(index) && (
-                <div
-                  className="absolute inset-0 flex flex-col justify-end p-3 bg-black bg-opacity-40 transition-all duration-400 ease-in-out"
-                  style={{ color: 'white' }}
-                >
-                  <p className="text-md font-semibold">
-                    <em>{image.album}</em>
-                  </p>
-                  <p className="text-sm font-semibold">{image.artist}</p>
-                  <p className="text-sm font-medium">{image.year}</p>
-                </div>
-              )}
+              <div
+                className={`absolute inset-0 flex flex-col justify-end p-3 bg-black bg-opacity-25 transition-all duration-600 ease-in-out ${
+                  isTextVisible(index) ? 'opacity-100' : 'opacity-0'
+                }`}
+                style={{ color: 'white' }}
+              >
+                <p className="text-md font-semibold">
+                  <em>{image.album}</em>
+                </p>
+                <p className="text-sm font-semibold">{image.artist}</p>
+                <p className="text-sm font-medium">{image.year}</p>
+              </div>
             </div>
           </div>
         ))}

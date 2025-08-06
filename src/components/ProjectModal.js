@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { X } from 'lucide-react';
 
 const ProjectModal = ({
@@ -11,6 +11,23 @@ const ProjectModal = ({
   hasPrevious,
   hasNext,
 }) => {
+  const [isVisible, setIsVisible] = useState(false);
+  const [isAnimating, setIsAnimating] = useState(false);
+
+  // Handle animation timing
+  useEffect(() => {
+    if (isOpen) {
+      setIsVisible(true);
+      setIsAnimating(true);
+    } else {
+      setIsAnimating(false);
+      const timer = setTimeout(() => {
+        setIsVisible(false);
+      }, 300); // Match transition duration
+      return () => clearTimeout(timer);
+    }
+  }, [isOpen]);
+
   const handleKeyDown = (e) => {
     if (e.key === 'Escape') {
       onClose();
@@ -21,7 +38,7 @@ const ProjectModal = ({
     }
   };
 
-  React.useEffect(() => {
+  useEffect(() => {
     if (isOpen) {
       document.addEventListener('keydown', handleKeyDown);
       document.body.style.overflow = 'hidden';
@@ -32,18 +49,24 @@ const ProjectModal = ({
     };
   }, [isOpen, hasPrevious, hasNext]);
 
-  if (!isOpen || !project) return null;
+  if (!isVisible || !project) return null;
 
   return (
     <div
-      className="fixed inset-0 z-25 flex items-center justify-center md:p-4 transition-colors duration-800 ease-in-out backdrop-blur-md"
+      className={`fixed inset-0 z-25 flex items-center justify-center md:p-4 transition-all duration-300 ease-in-out backdrop-blur-md ${
+        isAnimating ? 'opacity-100' : 'opacity-0'
+      }`}
       style={{
         backgroundColor: dominantColor
           ? dominantColor.replace('rgb(', 'rgba(').replace(')', ', 0.8)') // Convert rgb to rgba with 0.9 opacity
           : 'rgba(0, 0, 0, 0.9)', // Fallback to black with transparency
       }}
     >
-      <div className="bg-white w-full md:max-w-6xl h-full md:h-fit md:max-h-[90vh] overflow-y-auto">
+      <div
+        className={`bg-white w-full md:max-w-6xl h-full md:h-fit md:max-h-[90vh] overflow-y-auto transition-all duration-300 ease-in-out transform ${
+          isAnimating ? 'scale-100 opacity-100' : 'scale-95 opacity-0'
+        }`}
+      >
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-0">
           {/* Left Side - Image */}
           <div className="relative">
