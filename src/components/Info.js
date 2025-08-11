@@ -61,7 +61,7 @@ const Info = () => {
               ← Back to Selected Works
             </Link>
             <a
-              href="https://open.spotify.com/playlist/1tmjGYDGkrL57Itgg8IBRI?si=d8613ce2c2c14918&nd=1&dlsi=7e83256f42e04118"
+              href="https://open.spotify.com/playlist/5SnhZt6NUna5tg4vVJY5JM?si=B5IyznZXRpytEWc_czmNXA&pi=3RmDxu-HSl66M"
               target="_blank"
               rel="noopener noreferrer"
               className="text-sm hover-glow"
