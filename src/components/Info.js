@@ -37,13 +37,6 @@ const Info = () => {
             <h2 className="text-md md:text-base mb-3">Contact</h2>
             <div className="space-y-2 text-sm md:text-base">
               <a
-                href="mailto:jackhallenbeck@gmail.com"
-                className="text-md hover-glow flex items-center gap-2 w-fit"
-              >
-                <Mail size={20} strokeWidth={1} />
-                lilliana@foretellmgmt.xyz
-              </a>
-              <a
                 href="https://www.instagram.com/jackhallenbeck"
                 target="_blank"
                 rel="noopener noreferrer"
